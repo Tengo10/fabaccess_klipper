@@ -72,8 +72,9 @@ check_requirements()
         exit -1
     fi
     echo "Moonraker configuration found at ${MOONRAKER_CONFIG}"
-
-    sudo apt install python3-requests
+    source ~/klippy-env/bin/activate
+    pip install requests
+    deactivate
 }
 
 # Step 4: Link extension to Klipper
