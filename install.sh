@@ -73,7 +73,7 @@ check_requirements()
     fi
     echo "Moonraker configuration found at ${MOONRAKER_CONFIG}"
 
-    apt install python3-requests
+    sudo apt install python3-requests
 }
 
 # Step 4: Link extension to Klipper
