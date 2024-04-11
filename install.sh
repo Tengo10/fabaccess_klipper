@@ -168,7 +168,6 @@ fi
 verify_ready
 check_klipper
 check_requirements
-remove_service
 if [ ! $UNINSTALL ]; then
     link_extension
     add_updater
