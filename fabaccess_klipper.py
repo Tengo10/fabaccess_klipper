@@ -30,6 +30,12 @@ class FabCon:
             elif req.text == "free":
                 logging.info("FABACCESS Machine not registered to User, Canceling")
                 self.printer.invoke_shutdown("FABACCESS Machine not registered to User")
+            elif req.text == "disabled":
+                logging.info("FABACCESS Machine Blocked, Canceling")
+                self.printer.invoke_shutdown("FABACCESS Machine Blocked")
+            elif req.text == "blocked":
+                logging.info("FABACCESS Machine Disabled, Canceling")
+                self.printer.invoke_shutdown("FABACCESS Machine Disabled")
         except:
             logging.warning("FABACCESS ERROR")
 
